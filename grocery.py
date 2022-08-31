@@ -1,4 +1,4 @@
-sections = ["meats", "fruits", "veggies", "bakery", "drinks", "dairy", "snacks"]
+
 meats = {"chicken" : "$2.99/lb", "1lb ground beef" : "$7.49", "steak" : "$11.99/lb", "salmon" : "$9.99/lb", "shrimp" : "$9.99/lb", "ham" : "$3.89/lb", "16 oz bacon" : "$4.79", "16 oz turkey" : "$5.99", "pork chops" : "$5.49/lb", "lamb chops" : "$19.99/lb"}
 fruits = {"strawberries" : "$2.99/lb", "bananas" : "$0.49/lb", "apples" : "$1.67/lb", "kiwis" : "$3.99/lb", "grapes" : "$1.99/lb", "oranges" : "$0.99/lb", "mangos" : "$0.79/lb", "grapefruit" : "$1.50/lb", "apricot" : "1.99/lb", "watermelon" : '$1.69/lb'}
 veggies = {"5oz spinach" : "$3.00", "16oz carrots" : "$1.19", "zucchini" : "$1.19/lb", "squash" : "$1.19/lb", "celery" : "$1.79/lb", "kale" : "$1.99/lb", "broccoli" : "$1.89/lb", "cauliflower" : "$2.59/lb", "bell peppers" : "$0.69/each", "asparagus" : "$3.19/lb"}
@@ -7,19 +7,32 @@ drinks = {"2qt apple juice" : "$1.79", "2qt orange juice" : "$1.99", "1gal sweet
 dairy = {"6ct danimals" : "$2.99", "24oz cottage cheese" : "$4.79", "8oz cheddar cheese" : "$2.49", "8oz american cheese" : "$7.99", "7oz pepper jack cheese" : "$3.00", "16oz cream cheese" : "$3.29", "32oz greek yogurt" : "$6.29", "1gal 2% milk": "$3.69", "1gal skim milk" : "$3.69", "1gal whole milk" : "$3.69"}
 snacks = {"cheetos" : "$3.00", "pretzels" : "$3.00", "salt and vinegar chips" : "$3.50", "doritos" : "$5.49", "fritos" : "$3.00", "tortilla chips" : "$4.49", "gold fish" : "$2.79", "protein bars" : "$1.25/each", "takis" : "$3.49", "scooby snacks" : "$93.10"}
 
+sections = {'meats':meats, 'fruits':fruits, 'veggies':veggies, 'bakery':bakery, 'drinks':drinks, 'dairy':dairy, 'snacks':snacks}
+
+
+for key in sections:
+    print(key)
+
+choice = "meats"
+
+for key in sections:
+    if key == choice:
+        print("hello")
+
+
 
 #greeting
-name = input("Enter your name: ")
-print(f"Hello {name}!")
+# name = input("Enter your name: ")
+# print(f"Hello {name}!")
 
 #user selection
-options = ", ".join(sections)
-print(f"your options are: {options}")
+# options = ", ".join(sections)
+# print(f"your options are: {options}")
 
-selection = input("please select one by inputting the name as shown above: ")
+# selection = input("please select one by inputting the name as shown above: ")
 
-for x in range(len(sections)):
-    if selection == sections:
+# for x in range(len(sections)):
+#     if selection == sections:
 
 
 #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
