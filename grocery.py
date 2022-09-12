@@ -1,3 +1,11 @@
+from os import system
+system("clear")
+
+
+input("I am great. Press enter to continue...")
+
+system("clear")
+
 #sections, items, and prices
 meats = {
     "chicken" : "2.99", "ground beef" : "7.49", "steak" : "11.99", 
