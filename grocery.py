@@ -2,10 +2,6 @@ from os import system
 system("clear")
 
 
-input("I am great. Press enter to continue...")
-
-system("clear")
-
 #sections, items, and prices
 meats = {
     "chicken" : "2.99", "ground beef" : "7.49", "steak" : "11.99", 
@@ -71,71 +67,102 @@ if user_selection == "meats":
     for key, value in meats.items():
         print( key, ': ', value)
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in meats.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in meats.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
 elif user_selection == "fruits":
     for key, value in fruits.items():
         print(key, ': ', value)
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in fruits.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in fruits.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
 elif user_selection == "veggies":
     for key, value in veggies.items():
         print(key, ': ', value)
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in veggies.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in veggies.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
 elif user_selection == "bakery":
     for key, value in bakery.items():
         print(key, ': ', value)
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in bakery.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in bakery.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
 elif user_selection == "drinks":
     for key, value in drinks.items():
         print(key, ': ', value)
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in drinks.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in drinks.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
 elif user_selection == "dairy":
     for key, value in dairy.items():
         print(key, ': ', value)   
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in dairy.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in dairy.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
 elif user_selection == "snacks":
     for key, value in snacks.items():
         print(key, ': ', value) 
 
-    item = input("Which of these items would you like to add to your cart?")
-    for key, value in snacks.items():
-        if item == key:
-            cart.append(item)
-            price.append(value)
+    add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
+
+    while add_to_cart == 'yes':
+        item = input("Which of these items would you like to add to your cart?")
+        for key, value in snacks.items():
+            if item == key:
+                cart.append(item)
+                price.append(value)
+        add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
+
+
+    
 
 
 
