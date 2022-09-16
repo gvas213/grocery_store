@@ -47,10 +47,13 @@ cart = []
 price = []
 
 #greeting
+
 name = input("Enter your name: ")
 print(f"Hello {name}!")
 
 # user selection
+
+
 options = ", ".join(sections)
 print(f"your options are: {options}")
 user_selection = input("which category would you like to choose from? (please enter exactly as seen above.): ")
@@ -58,9 +61,9 @@ user_selection = input("which category would you like to choose from? (please en
 while  user_selection != "meats" and user_selection != "fruits" and  user_selection != "veggies" and user_selection != "bakery" and user_selection != "drinks" and user_selection != "dairy" and user_selection != "snacks" :
     user_selection = input("Sorry that wasn't option. Please enter exactly as seen above: ")
 
+
+
 #output  of product and prices
-
-
 
 if user_selection == "meats":
 
@@ -76,6 +79,7 @@ if user_selection == "meats":
                 cart.append(item)
                 price.append(value)
         add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
+        
 
 elif user_selection == "fruits":
     for key, value in fruits.items():
@@ -161,13 +165,16 @@ elif user_selection == "snacks":
                 price.append(value)
         add_to_cart = input("would you like to add any other items to your cart? (enter 'yes' or 'no)")
 
+        
+i = 0
+for x in range(len(price)):
+    item_price = float(price[x])
+    i = i + item_price
 
-    
+cart = ", ".join(cart)
 
+print(f"right now your cart includes: {cart}. Your total comes out to: ${i}")
 
-
-print(cart)
-print(price)
 
 
 #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
