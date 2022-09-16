@@ -72,7 +72,11 @@ if user_selection == "meats":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in meats.items():
             if item == key:
@@ -87,7 +91,11 @@ elif user_selection == "fruits":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in fruits.items():
             if item == key:
@@ -101,7 +109,11 @@ elif user_selection == "veggies":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in veggies.items():
             if item == key:
@@ -115,7 +127,11 @@ elif user_selection == "bakery":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in bakery.items():
             if item == key:
@@ -129,7 +145,11 @@ elif user_selection == "drinks":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in drinks.items():
             if item == key:
@@ -143,7 +163,11 @@ elif user_selection == "dairy":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in dairy.items():
             if item == key:
@@ -157,7 +181,11 @@ elif user_selection == "snacks":
 
     add_to_cart = input("would you like to add any of these items your cart? (enter 'yes' or 'no)")
 
-    while add_to_cart == 'yes':
+    while add_to_cart.lower() != "yes" and add_to_cart.lower() != "y" and add_to_cart.lower() != "no" and add_to_cart.lower() != 'n':
+        add_to_cart = input("That isn't a valid input please enter 'yes' or 'no)")
+
+
+    while add_to_cart.lower() == 'yes' or add_to_cart.lower() == 'y':
         item = input("Which of these items would you like to add to your cart?")
         for key, value in snacks.items():
             if item == key:
